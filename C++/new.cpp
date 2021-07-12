@@ -1,4 +1,5 @@
 #include <iostream>
+#include <typeinfo>
 
 using namespace std;
 
@@ -37,19 +38,31 @@ int main() {
 //    cout << "Size of int: " << sizeof(int) << "byte" << endl;
 //    cout << "Size of float: " << sizeof(float) << "byte" << endl;
 //    cout << "Size of double: " << sizeof(double) << "byte" << endl;
+ 
+    // int a = 5, b = 10, temp;
 
-    int a = 5, b = 10, temp;
+    // cout << "Before swapping." << endl;
+    // cout << "a = " << a << ", b = " << b << endl;
 
-    cout << "Before swapping." << endl;
-    cout << "a = " << a << ", b = " << b << endl;
+    // temp = a;
+    // a = b;
+    // b = temp;
 
-    temp = a;
-    a = b;
-    b = temp;
+    // cout << "\n After swapping." << endl;
+    // cout << "a = " << a << ", b = " << b << endl;
 
-    cout << "\n After swapping." << endl;
-    cout << "a = " << a << ", b = " << b << endl;
+    // return 0;
+
+/* This is how you do
+multi-line comments */
+
+    // cout << "Hello World! \n\n";
+    // cout << "I am learning C++";
+    
+    int myNum = 15;
+    cout << typeid(myNum).name();
 
     return 0;
-}
+
+ }
 //Hello world
